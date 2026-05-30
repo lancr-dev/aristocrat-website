@@ -32,7 +32,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   transition:
     background 0.3s ease,
     backdrop-filter 0.3s ease;
@@ -74,7 +74,7 @@ nav img {
 .home {
   min-height: 100dvh;
   padding-top: 155px;
-  background-image: url('images/home-bg.png');
+  background-image: url('images/bg-1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,6 +155,10 @@ nav img {
   padding-left: 300px;
   padding-right: 300px;
   padding-bottom: 200px;
+  background-image: url('images/bg-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about h1 {
@@ -181,6 +185,10 @@ nav img {
   align-items: center;
   gap: 200px;
   padding-bottom: 100px;
+  background-image: url('images/bg-4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .vision-mission h1 {
@@ -208,6 +216,7 @@ nav img {
   color: white;
   font-size: 24px;
   font-weight: bold;
+  z-index: 1;
 }
 
 /* Pure glowing circle */
@@ -235,13 +244,114 @@ nav img {
 
 .vision-box h3,
 .mission-box h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #b87818;
 }
 
 .vision-box p,
 .mission-box p {
   font-size: 1.3rem;
+}
+
+/* Ambience & Design Style */
+.ambience-design {
+  min-height: 100dvh;
+  padding-top: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-image: url('images/bg-3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ambience-box1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.ambience-box1 img {
+  height: 400px;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px black;
+}
+
+.ambience-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: white;
+  background-color: #012e17;
+  width: 100%;
+  height: 370px;
+  box-shadow: 1px 1px 10px black;
+  z-index: 1;
+}
+
+.ambience-box2 h1 {
+  font-size: 4rem;
+}
+
+.ambience-box2 p {
+  font-size: 1.2rem;
+  text-align: left;
+  max-width: 1000px;
+}
+
+.packages {
+  min-height: 100dvh;
+  background-image: url('images/bg-6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.packages-box1 {
+  display: flex;
+  gap: 50px;
+  color: white;
+  padding-right: 170px;
+}
+
+.columns {
+  max-width: 350px;
+  line-height: 2;
+}
+
+.packages-box1 h2 {
+  font-size: 2.5rem;
+}
+
+.packages-box1 p {
+  font-size: 1.3rem;
+}
+
+.packages-box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  padding-right: 200px;
+}
+
+.packages-box2 h1 {
+  font-size: 4rem;
+}
+
+.packages-box2 p {
+  font-size: 1.2rem;
+  max-width: 500px;
 }
 
 /* Contact Page Style */
@@ -253,6 +363,10 @@ nav img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-image: url('images/bg-3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact-box1 {
@@ -297,6 +411,10 @@ nav img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-image: url('images/bg-5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .location-box1 {
@@ -312,13 +430,93 @@ nav img {
   text-align: center;
   font-size: 2.5rem;
   gap: 80px;
+}
+
+.employee-details p {
   color: #b87818;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.employee-details p:hover {
+  background: linear-gradient(120deg, #888, #fff, #c0c0c0, #fff, #888);
+  background-size: 300% 100%;
+  animation: silverShine 1.5s linear infinite;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Sparkle 1 */
+.employee-details p:hover::before {
+  content: '✦';
+  position: absolute;
+  top: -12px;
+  left: -10px;
+  color: #fff;
+  font-size: 14px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #d9d9d9;
+  animation: sparkle1 0.8s infinite alternate;
+}
+
+/* Sparkle 2 */
+.employee-details p:hover::after {
+  content: '✧';
+  position: absolute;
+  bottom: -10px;
+  right: -12px;
+  color: #fff;
+  font-size: 12px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #d9d9d9;
+  animation: sparkle2 1s infinite alternate;
+}
+
+@keyframes silverShine {
+  from {
+    background-position: 300% 0;
+  }
+  to {
+    background-position: -300% 0;
+  }
+}
+
+@keyframes sparkle1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.4) translateY(-5px);
+  }
+}
+
+@keyframes sparkle2 {
+  0% {
+    opacity: 1;
+    transform: scale(0.5) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.8) rotate(90deg);
+  }
 }
 
 .location-box1 img {
   height: 400px;
   width: 600px;
-  border: 3px solid #004222;
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px black;
 }
 
 .location-box2 {
@@ -345,4 +543,37 @@ nav img {
 
 .loc-title {
   color: #00bd61;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Bottom fade to black */
+section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, #000);
+  pointer-events: none;
+}
+
+/* Top fade from black */
+section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, transparent, #000);
+  pointer-events: none;
 }
