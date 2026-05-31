@@ -31,3 +31,31 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('scrolled');
   }
 });
+
+document.querySelectorAll('.carousel-wrapper').forEach((wrapper) => {
+  const viewport = wrapper.querySelector('.carousel-viewport');
+  const carousel = wrapper.querySelector('.carousel');
+  const prevBtn = wrapper.querySelector('.prev');
+  const nextBtn = wrapper.querySelector('.next');
+
+  const getScrollAmount = () => {
+    const card = carousel.querySelector('.card');
+    const gap = parseInt(getComputedStyle(carousel).gap) || 0;
+
+    return card.offsetWidth + gap;
+  };
+
+  nextBtn.addEventListener('click', () => {
+    viewport.scrollBy({
+      left: getScrollAmount(),
+      behavior: 'smooth',
+    });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    viewport.scrollBy({
+      left: -getScrollAmount(),
+      behavior: 'smooth',
+    });
+  });
+});
