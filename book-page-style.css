@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Seasons';
+  src: url(fonts/The\ Seasons\ Bold.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  font-family: 'Seasons', sans-serif;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url('images/bg-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.booking-container {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #bfa358;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #012e17;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.section {
+  margin-bottom: 12px;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #bfa358;
+  color: #000;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000000;
+}
+
+textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+.button-container {
+  margin-top: 40px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #012e17;
+  color: #bfa358;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-family: 'Seasons', sans-serif;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background: #007539;
+}

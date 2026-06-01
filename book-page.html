@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="book-page-style.css" />
+    <link rel="icon" href="images/aristocrat-logo.png" />
+    <title>Event Booking Form</title>
+  </head>
+  <body>
+    <div class="booking-container">
+      <h1 class="main-heading">RESERVE YOUR SPECIAL EVENT</h1>
+      <p class="sub-heading">
+        Please fill in the details for your custom gathering.
+      </p>
+
+      <form>
+        <div class="form-grid">
+          <div>
+            <div class="section">
+              <h2 class="section-title">1. Contact Information</h2>
+
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" />
+              </div>
+
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email address" />
+              </div>
+
+              <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="tel" placeholder="Enter your mobile number" />
+              </div>
+            </div>
+
+            <div class="section">
+              <h2 class="section-title">2. Event Details</h2>
+
+              <div class="form-group">
+                <label>Date</label>
+                <input type="date" />
+              </div>
+
+              <div class="form-group">
+                <label>Time</label>
+                <input type="time" />
+              </div>
+
+              <div class="form-group">
+                <label>Guest Count</label>
+                <input type="number" placeholder="Number of guests" />
+              </div>
+
+              <div class="form-group">
+                <label>Event Type</label>
+                <input
+                  type="text"
+                  placeholder="Birthday, Wedding, Corporate, etc."
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Preferred Menu Package</label>
+                <input type="text" placeholder="Select preferred package" />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section">
+              <h2 class="section-title">3. Specific Requests</h2>
+
+              <div class="form-group">
+                <label>Specific Dietary Requests or Themes</label>
+                <textarea
+                  placeholder="Enter requests, themes, instructions, etc."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="section">
+              <h2 class="section-title">4. Payment & Deposit Selection</h2>
+
+              <div class="form-group">
+                <label>Choose Payment Method</label>
+                <select>
+                  <option selected disabled>Select Payment Method</option>
+                  <option>G-Cash</option>
+                  <option>Maya</option>
+                  <option>Visa</option>
+                  <option>MasterCard</option>
+                </select>
+              </div>
+
+              <div class="button-container">
+                <button type="submit" class="submit-btn">
+                  COMPLETE TRANSACTION & CONFIRM BOOKING
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

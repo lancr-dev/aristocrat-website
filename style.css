@@ -143,7 +143,7 @@ nav img {
   color: white;
 }
 
-/* About Us Style */
+/* About Page Style */
 .about {
   min-height: 100dvh;
   padding-top: 155px;
@@ -178,7 +178,7 @@ nav img {
   font-size: 1.3rem;
 }
 
-/* Vision Mission Style */
+/* Vision Mission Page Style */
 .vision-mission {
   min-height: 100dvh;
   padding-top: 155px;
@@ -245,7 +245,7 @@ nav img {
   font-size: 1.3rem;
 }
 
-/* Menu Section Style */
+/* Menu Page Style */
 .menu {
   min-height: 100dvh;
   padding: 155px 8%;
@@ -382,7 +382,7 @@ nav img {
   transform: scale(1.2);
 }
 
-/* Ambience & Design Style */
+/* Ambience & Design Page Style */
 .ambience-design {
   min-height: 100dvh;
   padding-top: 155px;
@@ -456,7 +456,35 @@ nav img {
 
 .columns {
   max-width: 350px;
-  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.columns p {
+  background-color: #af6900;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 166, 0);
+  padding: 10px 20px;
+}
+
+.columns2 {
+  max-width: 350px;
+}
+
+.column-packs {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.column-packs p {
+  background-color: #00532b;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 1px solid green;
 }
 
 .packages-box1 h2 {
@@ -675,6 +703,7 @@ nav img {
   color: #00bd61;
 }
 
+/* Between Sections Nlack Gradient Fades */
 section {
   position: relative;
   min-height: 100vh;
