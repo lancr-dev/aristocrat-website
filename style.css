@@ -703,6 +703,74 @@ nav img {
   color: #00bd61;
 }
 
+/* Footer Style */
+footer {
+  background-color: #002411;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 30px;
+  gap: 50px;
+}
+
+.footer-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.media img {
+  width: 20px;
+}
+
+.common-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.common-links a {
+  color: white;
+  text-decoration: none;
+}
+.common-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.devs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.devs a {
+  color: white;
+  text-decoration: none;
+}
+
+.devs a:hover {
+  text-decoration: underline;
+}
+
+.footer-title {
+  color: rgb(163, 163, 163);
+}
+
 /* Between Sections Nlack Gradient Fades */
 section {
   position: relative;
